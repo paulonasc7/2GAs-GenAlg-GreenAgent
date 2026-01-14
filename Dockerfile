@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 COPY . /app
 
+RUN make -C ga
 RUN make -C examples cvrp
 
 RUN pip install --no-cache-dir ./green-agent-template-main
