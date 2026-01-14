@@ -1,0 +1,11 @@
+[green_agent]
+endpoint = "http://127.0.0.1:9009"
+cmd = "env FASTMCP_LOG_LEVEL=DEBUG FASTMCP_DEBUG=true python ../green-agent-template-main/src/server.py --host 127.0.0.1 --port 9009"
+
+[[participants]]
+role = "ga_suggester"
+endpoint = "http://127.0.0.1:9018"
+cmd = "python scenarios/ga_tuning/ga_suggester.py --host 127.0.0.1 --port 9018"
+
+[config]
+iterations = 3

@@ -1,0 +1,4 @@
+Best score (lower is better): 23.3238
+Routes (capacity 15):
+Route 1: depot -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> depot
+Route 2: depot -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> C15(d1) -> depot

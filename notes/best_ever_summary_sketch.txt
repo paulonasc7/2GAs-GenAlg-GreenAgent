@@ -1,0 +1,52 @@
+Best-Ever Summary Sketch (for purple agent feedback)
+
+Goal
+- Provide compact, actionable signals derived from the best-ever archive (nBestGenomes)
+- Map signals to parameter adjustments (mutation, crossover, popsize, selection, elitism)
+
+Inputs (per GA run)
+- best_ever_routes: list of best-ever solutions (routes), size = nBestGenomes
+- best_ever_costs: fitness values for each best-ever solution
+- population_stats: mean, std, diversity, convergence, best_cost, etc.
+
+Proposed summary payload (JSON-like)
+{
+  "best_ever": {
+    "count": 10,
+    "cost_min": 145.2,
+    "cost_max": 152.7,
+    "cost_mean": 148.9,
+    "cost_std": 2.1,
+    "improvement_window": 0.7,
+    "edge_overlap_ratio": 0.83,
+    "route_similarity_mean": 0.78,
+    "route_similarity_std": 0.09,
+    "unique_edges": 124,
+    "dominant_edges": ["(5,12)", "(12,9)", "(9,1)"]
+  },
+  "population": {
+    "mean_cost": 183.9,
+    "std_cost": 1.4,
+    "diversity": 0.12,
+    "convergence": 0.98
+  }
+}
+
+Metric definitions
+- improvement_window: best_ever_cost_min over last N runs vs earlier runs (trend indicator)
+- edge_overlap_ratio: average fraction of shared edges between best-ever solutions
+- route_similarity_mean/std: average pairwise similarity (e.g., Jaccard on edges)
+- unique_edges: number of distinct edges in best-ever archive
+- dominant_edges: top-K edges appearing in most best-ever routes
+
+How the purple agent can use it (examples)
+- High edge_overlap_ratio + low diversity -> increase mutation or switch to more disruptive crossover
+- High cost_std + noisy convergence -> increase population_size or reduce mutation
+- improvement_window near 0 -> increase exploration (mutation, popsize) or change selection
+- dominant_edges stable but cost plateaus -> reduce elitism or adjust crossover type
+
+Implementation notes (if done later)
+- Extract routes for best-ever individuals from GAStatistics::bestIndividual(i)
+- Compute edge lists for each route, then pairwise Jaccard similarity
+- Aggregate stats after each run and include in the feedback prompt
+

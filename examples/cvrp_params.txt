@@ -1,0 +1,15 @@
+seed	0
+minimaxi	1
+convergence_percentage	0.99
+record_diversity	0
+score_filename	generations.dat
+select_scores	2
+population_size	140
+number_of_generations	300
+mutation_probability	0.09
+crossover_probability	0.9
+number_of_best	1
+generations_to_convergence	20
+score_frequency	1
+flush_frequency	20
+elitism	1

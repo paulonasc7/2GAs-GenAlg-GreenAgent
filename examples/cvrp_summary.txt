@@ -1,0 +1,12 @@
+best_cost	23.3238
+maxEver	262.876
+minEver	23.3238
+offlineMax	35.748
+offlineMin	28.1744
+online	31.5305
+convergence	1
+generations	300
+selections	42000
+crossovers	37698
+mutations	42000
+replacements	42000

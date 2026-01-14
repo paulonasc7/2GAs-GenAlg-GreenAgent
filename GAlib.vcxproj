@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B1C344DD-1571-41D7-8A29-C4C67F768E48}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>nmake /nologo /f makefile.vcpp</NMakeBuildCommandLine>
+    <NMakeOutput>GA_d.lib</NMakeOutput>
+    <NMakeCleanCommandLine>nmake /nologo /f makefile.vcpp clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>echo ‘clean and build’</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>D:\WorkSpace\GA\galib247;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>nmake /nologo /f Makefile.vcpp</NMakeBuildCommandLine>
+    <NMakeOutput>GA.lib</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeCleanCommandLine>nmake /nologo /f Makefile.vcpp clean</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="makefile.vcpp" />
+    <None Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="examples\ex1.C" />
+    <ClCompile Include="examples\ex10.C" />
+    <ClCompile Include="examples\ex11.C" />
+    <ClCompile Include="examples\ex12.C" />
+    <ClCompile Include="examples\ex13.C" />
+    <ClCompile Include="examples\ex14.C" />
+    <ClCompile Include="examples\ex15.C" />
+    <ClCompile Include="examples\ex16.C" />
+    <ClCompile Include="examples\ex17.C" />
+    <ClCompile Include="examples\ex18.C" />
+    <ClCompile Include="examples\ex19.C" />
+    <ClCompile Include="examples\ex2.C" />
+    <ClCompile Include="examples\ex20.C" />
+    <ClCompile Include="examples\ex21.C" />
+    <ClCompile Include="examples\ex22.C" />
+    <ClCompile Include="examples\ex23.C" />
+    <ClCompile Include="examples\ex24.C" />
+    <ClCompile Include="examples\ex25.C" />
+    <ClCompile Include="examples\ex26.C" />
+    <ClCompile Include="examples\ex27.C" />
+    <ClCompile Include="examples\ex3.C" />
+    <ClCompile Include="examples\ex4.C" />
+    <ClCompile Include="examples\ex5.C" />
+    <ClCompile Include="examples\ex6.C" />
+    <ClCompile Include="examples\ex7.C" />
+    <ClCompile Include="examples\ex8.C" />
+    <ClCompile Include="examples\ex9.C" />
+    <ClCompile Include="examples\randtest.C" />
+    <ClCompile Include="examples\seed.C" />
+    <ClCompile Include="ga\GA1DArrayGenome.C" />
+    <ClCompile Include="ga\GA1DBinStrGenome.C" />
+    <ClCompile Include="ga\GA2DArrayGenome.C" />
+    <ClCompile Include="ga\GA2DBinStrGenome.C" />
+    <ClCompile Include="ga\GA3DArrayGenome.C" />
+    <ClCompile Include="ga\GA3DBinStrGenome.C" />
+    <ClCompile Include="ga\GAAllele.C" />
+    <ClCompile Include="ga\GABaseGA.C" />
+    <ClCompile Include="ga\GABin2DecGenome.C" />
+    <ClCompile Include="ga\gabincvt.C" />
+    <ClCompile Include="ga\GABinStr.C" />
+    <ClCompile Include="ga\GADCrowdingGA.C" />
+    <ClCompile Include="ga\GADemeGA.C" />
+    <ClCompile Include="ga\gaerror.C" />
+    <ClCompile Include="ga\GAGenome.C" />
+    <ClCompile Include="ga\GAIncGA.C" />
+    <ClCompile Include="ga\GAList.C" />
+    <ClCompile Include="ga\GAListBASE.C" />
+    <ClCompile Include="ga\GAListGenome.C" />
+    <ClCompile Include="ga\GAParameter.C" />
+    <ClCompile Include="ga\GAPopulation.C" />
+    <ClCompile Include="ga\garandom.C" />
+    <ClCompile Include="ga\GARealGenome.C" />
+    <ClCompile Include="ga\GAScaling.C" />
+    <ClCompile Include="ga\GASelector.C" />
+    <ClCompile Include="ga\GASimpleGA.C" />
+    <ClCompile Include="ga\GASStateGA.C" />
+    <ClCompile Include="ga\GAStatistics.C" />
+    <ClCompile Include="ga\GAStringGenome.C" />
+    <ClCompile Include="ga\GATree.C" />
+    <ClCompile Include="ga\GATreeBASE.C" />
+    <ClCompile Include="ga\GATreeGenome.C" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ga\ga.h" />
+    <ClInclude Include="ga\GA1DArrayGenome.h" />
+    <ClInclude Include="ga\GA1DBinStrGenome.h" />
+    <ClInclude Include="ga\GA2DArrayGenome.h" />
+    <ClInclude Include="ga\GA2DBinStrGenome.h" />
+    <ClInclude Include="ga\GA3DArrayGenome.h" />
+    <ClInclude Include="ga\GA3DBinStrGenome.h" />
+    <ClInclude Include="ga\GAAllele.h" />
+    <ClInclude Include="ga\GAArray.h" />
+    <ClInclude Include="ga\GABaseGA.h" />
+    <ClInclude Include="ga\GABin2DecGenome.h" />
+    <ClInclude Include="ga\gabincvt.h" />
+    <ClInclude Include="ga\GABinStr.h" />
+    <ClInclude Include="ga\gaconfig.h" />
+    <ClInclude Include="ga\GADCrowdingGA.h" />
+    <ClInclude Include="ga\GADemeGA.h" />
+    <ClInclude Include="ga\gaerror.h" />
+    <ClInclude Include="ga\GAEvalData.h" />
+    <ClInclude Include="ga\GAGenome.h" />
+    <ClInclude Include="ga\gaid.h" />
+    <ClInclude Include="ga\GAIncGA.h" />
+    <ClInclude Include="ga\GAList.h" />
+    <ClInclude Include="ga\GAListBASE.h" />
+    <ClInclude Include="ga\GAListGenome.h" />
+    <ClInclude Include="ga\GAMask.h" />
+    <ClInclude Include="ga\GANode.h" />
+    <ClInclude Include="ga\GAParameter.h" />
+    <ClInclude Include="ga\GAPopulation.h" />
+    <ClInclude Include="ga\garandom.h" />
+    <ClInclude Include="ga\GARealGenome.h" />
+    <ClInclude Include="ga\GAScaling.h" />
+    <ClInclude Include="ga\GASelector.h" />
+    <ClInclude Include="ga\GASimpleGA.h" />
+    <ClInclude Include="ga\GASStateGA.h" />
+    <ClInclude Include="ga\GAStatistics.h" />
+    <ClInclude Include="ga\GAStringGenome.h" />
+    <ClInclude Include="ga\GATree.h" />
+    <ClInclude Include="ga\GATreeBASE.h" />
+    <ClInclude Include="ga\GATreeGenome.h" />
+    <ClInclude Include="ga\gatypes.h" />
+    <ClInclude Include="ga\gaversion.h" />
+    <ClInclude Include="ga\std_stream.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

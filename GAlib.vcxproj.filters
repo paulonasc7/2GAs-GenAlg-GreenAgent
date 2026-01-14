@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="examples">
+      <UniqueIdentifier>{a521ac2a-f21d-4da8-8554-f431b29a9908}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.txt" />
+    <None Include="makefile.vcpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="examples\ex1.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex2.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex3.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex4.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex5.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex6.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex7.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex8.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex9.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex10.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex11.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex12.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex13.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex14.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex15.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex16.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex17.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex18.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex19.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex20.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex21.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex22.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex23.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex24.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex25.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex26.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\ex27.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\randtest.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\seed.C">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GA1DArrayGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GA1DBinStrGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GA2DArrayGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GA2DBinStrGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GA3DArrayGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GA3DBinStrGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GAAllele.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GABaseGA.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GABin2DecGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\gabincvt.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GABinStr.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GADCrowdingGA.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GADemeGA.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\gaerror.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GAGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GAIncGA.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GAList.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GAListBASE.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GAListGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GAParameter.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GAPopulation.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\garandom.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GARealGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GAScaling.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GASelector.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GASimpleGA.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GASStateGA.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GAStatistics.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GAStringGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GATree.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GATreeBASE.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ga\GATreeGenome.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ga\ga.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GA1DArrayGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GA1DBinStrGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GA2DArrayGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GA2DBinStrGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GA3DArrayGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GA3DBinStrGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAAllele.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GABaseGA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GABin2DecGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\gabincvt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GABinStr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\gaconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GADCrowdingGA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GADemeGA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\gaerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAEvalData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\gaid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAIncGA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAListBASE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAListGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAMask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GANode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAParameter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAPopulation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\garandom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GARealGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAScaling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GASelector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GASimpleGA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GASStateGA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAStatistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GAStringGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GATree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GATreeBASE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\GATreeGenome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\gatypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\gaversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ga\std_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
